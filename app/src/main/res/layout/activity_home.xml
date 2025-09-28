@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECF0F1"
+    android:padding="24dp">
+
+    <!-- Header Card -->
+    <LinearLayout
+        android:id="@+id/headerCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:background="@drawable/card_background"
+        android:padding="24dp"
+        android:layout_marginBottom="24dp"
+        android:elevation="4dp">
+
+        <!-- Welcome Message -->
+        <TextView
+            android:id="@+id/welcomeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome, User!"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#2C3E50"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- User Email -->
+        <TextView
+            android:id="@+id/userEmailTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: Not available"
+            android:textSize="16sp"
+            android:textColor="#7F8C8D"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <!-- User Gender -->
+        <TextView
+            android:id="@+id/userGenderTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender: Not specified"
+            android:textSize="16sp"
+            android:textColor="#7F8C8D"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <!-- User Info Card -->
+    <LinearLayout
+        android:id="@+id/infoCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerCard"
+        android:orientation="vertical"
+        android:background="@drawable/card_background"
+        android:padding="20dp"
+        android:layout_marginBottom="24dp"
+        android:elevation="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Information"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#2C3E50"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✓ Account successfully created"
+            android:textSize="14sp"
+            android:textColor="#27AE60"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✓ Terms &amp; Conditions accepted"
+            android:textSize="14sp"
+            android:textColor="#27AE60"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✓ Profile information saved"
+            android:textSize="14sp"
+            android:textColor="#27AE60" />
+
+    </LinearLayout>
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:text="LOGOUT"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@drawable/logout_button_background"
+        android:textColor="@android:color/white"
+        android:elevation="4dp" />
+
+</RelativeLayout>
+
