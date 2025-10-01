@@ -8,13 +8,23 @@ import java.io.Serializable;
 public class StudentClass implements Serializable
 {
     private String name;
-    private String StudentId;
+    private String studentId;
     private String email;
+    private String password;
     private String phoneNumber;
     private String gender;
 
     public StudentClass() {
         super();
+    }
+
+    public StudentClass(String name, String studentId, String email, String password, String phoneNumber, String gender){
+        this.name = name;
+        this.studentId = studentId;
+        this.email = email;
+        this.password = password;
+        this.phoneNumber = phoneNumber;
+        this.gender = gender;
     }
 
     @NonNull
@@ -53,11 +63,11 @@ public class StudentClass implements Serializable
     }
 
     public String getStudentId() {
-        return StudentId;
+        return studentId;
     }
 
     public void setStudentId(String studentId) {
-        StudentId = studentId;
+        this.studentId = studentId;
     }
 
     public String getEmail() {
@@ -66,6 +76,14 @@ public class StudentClass implements Serializable
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getPhoneNumber() {
